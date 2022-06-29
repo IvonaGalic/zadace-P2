@@ -12,7 +12,7 @@ def pozdrav(ime):
 dobrodošao = lambda ime: print("Dobrodošao", ime + "!")
 
 def treca(funkcija):
-           funkcija("Ivona")
+           funkcija("ime")
 
 
 treca(pozdrav)
