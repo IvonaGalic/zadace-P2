@@ -2,17 +2,19 @@
 
 import re
 
-regex = "^k.*[0-5].*\s.*v$"
-regex2 = "\s"
+regex = "^[a-z]+\.[a-z]+@fpmoz.sum.ba$"
+
+regex1 = "^[a-z]{1}[a-z]+([0-9]*)?@sum.ba$"
 
 while 1:
-    unos = input("Unesit ime: ")
-    rezultat = re.search(regex and regex2, unos)
-    print(rezultat)
-    if rezultat:
+    unos = input("Mail: ")
+    unos1 = input("eduId: ")
+    rezultat = re.search(regex, unos)
+    rezultat1 = re.search(regex1, unos1)
+    if rezultat and rezultat1:
         break
     else:
-        print("Greška!") 
+        print("Unos koji ste unijeli je pogrešan!") 
 
-print("Točan unos!") 
+print("Ispravan unos!") 
 
